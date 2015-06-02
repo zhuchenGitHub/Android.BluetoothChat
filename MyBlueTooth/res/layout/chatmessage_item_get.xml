@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chatDateGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/usernameGet"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:gravity="left|bottom"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/bubble_lay_1_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/bubble_1_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/left_1" />
+
+                <ImageView
+                    android:id="@+id/bubble_4_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bubble_1_get"
+                    android:background="@drawable/left_4" />
+
+                <ImageView
+                    android:id="@+id/bubble_7_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bubble_4_get"
+                    android:background="@drawable/left_7" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bubble_lay_2_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bubble_lay_1_get" >
+
+                <ImageView
+                    android:id="@+id/bubble_2_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/left_2" />
+
+                <TextView
+                    android:id="@+id/chatContent_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bubble_2_get"
+                    android:background="@drawable/left_5"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/bubble_8_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/chatContent_get"
+                    android:background="@drawable/left_8" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bubble_lay_3_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bubble_lay_2_get" >
+
+                <ImageView
+                    android:id="@+id/bubble_3_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/left_3" />
+
+                <ImageView
+                    android:id="@+id/bubble_6_get"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bubble_3_get"
+                    android:background="@drawable/left_6" />
+
+                <ImageView
+                    android:id="@+id/bubble_9_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bubble_6_get"
+                    android:background="@drawable/left_9" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
